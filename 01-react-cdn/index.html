@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // const container = document.querySelector("#root");
+        // const root = ReactDOM.createRoot(container);
+        // root.render(React.createElement("div", null,
+        //     React.createElement("h1", null, "Hello world!"),
+        //     React.createElement("h2", null, "Soy un h2"),
+        //     React.createElement("h3", null, "Soy un h3"),
+        //     React.createElement("h4", null, "Soy un h4"),
+        //     React.createElement("h5", null, "Soy un h5"),
+        //     React.createElement("h6", null, "Soy un h6"),
+        // ));
+
+        // const container = document.querySelector("#root");
+        // const root = ReactDOM.createRoot(container);
+        // root.render(
+        //     <div>
+        //         <h1>Used babel.js en React CDN</h1>
+        //         <ol>
+        //             <li>Hello</li>
+        //             <li>Hello1</li>
+        //             <li>Hello2</li>
+        //             <li>Hello3</li>
+        //             <li>Hello4</li>
+        //         </ol>
+
+        //     </div>
+        // );
+
+        // const container = document.querySelector("#root");
+        // const root = ReactDOM.createRoot(container);
+
+        // class Root extends React.Component{
+        //     render() {
+        //         return (
+        //             <ol>
+        //                 <li>Hello0</li>
+        //                 <li>Hello1</li>
+        //                 <li>Hello2</li>
+        //                 <li>Hello3</li>
+        //                 <li>Hello4</li>
+        //             </ol>
+        //         );
+        //     }
+        // }
+
+        // root.render(
+        //     <div>
+        //         <h1>React CDN Component</h1>
+        //         <Root />
+        //     </div>
+        // );
+
+        const container = document.querySelector("#root");
+        const root = ReactDOM.createRoot(container);
+
+        const Root = () => {
+            return (
+                <ol>
+                    <li>Hello0</li>
+                    <li>Hello1</li>
+                    <li>Hello2</li>
+                    <li>Hello3</li>
+                    <li>Hello4</li>
+                </ol>);
+        }
+
+        root.render(
+            <div>
+                <h1>React CDN Component</h1>
+                <Root />
+            </div>
+        );
+    </script>
+</body>
+
+</html>
