@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta tags PWA -->
+  <meta name="theme-color" content="#186486">
+
+  <meta name="MobileOptimized" content="#width">
+  <meta name="HandheldFriendly" content="true">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="blue-translucent">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="./src/assets/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./src/assets/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-startup-image" href="./src/assets/favicon.png" type="image/x-icon">
+
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <!-- Scripts -->
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="./register.js"></script>
+</body>
+
 </html>
